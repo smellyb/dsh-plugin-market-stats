@@ -1,0 +1,12 @@
+# Bundle patch for dsh-plugin-market-stats.
+#
+# The row id lives in the loader's GLOBAL id space: one entry per id, later
+# wins, no diagnostic. This id is deliberately unique so it can never shadow
+# an official row (sharing an official id drops that row silently).
+#
+# The row `name` must stay exactly the package name: the client module host
+# mounts a package's browser half on the loader row whose specifier resolves to
+# that package's own manifest, so a subpath name would mount the host half only.
+- insert:
+    - id: plugin-market-stats
+      name: 'dsh-plugin-market-stats'

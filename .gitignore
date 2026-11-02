@@ -1,0 +1,19 @@
+# Dependencies (there are none at runtime; this is for a future build step)
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build output, if a bundler is ever introduced
+dist/
+*.tsbuildinfo
+
+# Packed artifacts
+*.tgz
+
+# Editors and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

@@ -1,0 +1,11 @@
+# Keep the published package byte-identical across platforms: this is a
+# browser bundle plus JSON, so normalizing line endings to CRLF on checkout
+# would only create spurious diffs.
+* text=auto eol=lf
+
+*.svg text eol=lf
+*.js  text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md  text eol=lf
